@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>LR-2</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+
+    <body>
+
+        <header>
+            <nav></nav>
+            <h1>HTML forms and positioning</h1>
+        </header>
+
+        <main>
+            <header>
+                <div>
+                    <p class="p1">Laboratory work #2. Performer: Makarukha M., TR-13</p>
+                </div>
+            </header>
+
+            <section class="section1">
+                <article class="article1">
+                    Lorem iusto officiis consequatur maxime quia temporibus? Asperiores nam ratione id blanditiis dolorem. Fugiat autem rem adipisci omnis ea. Delectus esse numquam reprehenderit doloribus illo tempora? Non maxime voluptas facilis maiores commodi dolorem Nemo libero placeat nesciunt ducimus pariatur officia, velit numquam consequatur Est quibusdam numquam esse ullam non in. Vel est minima corporis excepturi perspiciatis Laudantium voluptatum neque provident odit nesciunt nobis asperiores minus Harum maxime quos unde quae enim molestiae Aliquam et magni non maiores dicta maxime ut reprehenderit veritatis dolores. Hic amet aut dolore necessitatibus animi exercitationem? Quasi repellendus odit molestiae hic sunt aspernatur, necessitatibus? Consequuntur exercitationem
+                    <img class="img1" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                    Adipisicing hic neque quos quaerat totam Consequatur debitis quidem incidunt accusantium nemo? Numquam ad at omnis culpa voluptates Molestiae facilis et animi eaque magni labore! Recusandae molestias libero adipisci atque
+                    <img class="img2" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                    Ipsum cum voluptates eius sequi ipsa Error cupiditate tempore laudantium pariatur dolorem amet. Aspernatur nisi dolorem dolorem sapiente quis molestias. Incidunt tempore voluptate enim dignissimos rerum? Saepe ipsam nisi ut
+                    <img class="img3" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                    Elit nulla eos quidem pariatur nulla facilis impedit consequuntur Aspernatur ad culpa odit maiores at Non veritatis soluta porro itaque laboriosam. A nam molestias porro quia vel? Voluptas fugiat laboriosam
+                </article>
+
+                <div class="div1">
+                    <img class="img4" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                    <img class="img5" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                    <img class="img6" src="https://avatars.githubusercontent.com/u/94192274?v=4" alt="">
+                </div>
+            </section>
+
+            <hr></hr>
+            
+            <section class="section2" align="center">
+                <nav>
+                    <p align="center">
+                        <!--<a href="#Реєстрація">Форма реєстрації | </a>-->
+                        <!--<a href="#Вхід">Форма входу | </a>-->
+                        <!--<a href="#Зворотній">Форма зворотнього зв'язку</a>-->
+
+                        <a href="#registration_form">Registration form</a>
+                        <a href="#login_form">Login form</a>
+                        <a href="#feedback_form">Feedback form</a>
+                    </p>
+                </nav>
+                <nav>
+                    <div class="div2">
+                    </div>
+                    <div class="div3">
+                    </div>
+                    <div class="div4">
+                    </div>
+                </nav>
+            </section>
+
+            <hr></hr>
+
+            <section class="section3" align="center">
+                <form id="registration_form" action="/main.py" method="get">
+                    <table class="dashed_table_1" align="center">
+                        <tr>
+                            <td>
+                                <h2 align="center">
+                                    <a name="Registration">Registration form</a>
+                                </h2>
+
+                                <div class="registration_div">
+                                    <div class="reg_div_1">
+                                        <label for="country">Your country</label>
+                                        <select name="country" class="text">
+                                            <option selected disabled>Country</option>
+                                            <option value="China">China</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Ukraine">Ukraine</option>
+                                            <option value="UK">UK</option>
+                                            <option value="USA">USA</option>
+                                        </select>
+
+                                        <br>
+
+                                        <label for="phone">Phone number</label>
+                                        <input type="tel" class="text" placeholder="+380xxxxxxxxx" pattern="\+380[0-9]{9}" maxlength="13">
+
+                                        <br>
+
+                                        <label for="social">Social network</label>
+                                        <input type="url" class="text" name="social" placeholder="Social network link">
+
+                                        <br>
+
+                                        <label for="email">Email</label>
+                                        <input type="email" class="text" name="email" placeholder="example@email.com">
+
+                                        <br>
+
+                                        <label for="password">Password</label>
+                                        <input type="password" class="text" name="password" pattern="[A-Za-z0-9]{8-15}" maxlength="15" placeholder="Password">
+
+                                        <br>
+
+                                        <input class="reg_agree" type="checkbox" name="agreement">
+                                        <label for="agreement">Your agreement</label>
+                                    </div>
+
+                                    <div>
+                                        <div class="reg_div_2">
+                                            <label for="name">Name</label>
+                                            <input type="text" class="text" placeholder="Name">
+
+                                            <br>
+
+                                            <label for="surname">Surname</label>
+                                            <input type="text" class="text" placeholder="Surname">
+                                            <br>
+
+                                            <fieldset>
+                                                <legend>Sex</legend>
+                                                <input type="radio" id="male" name="sex">
+                                                <label for="male">Male</label>
+                                                <input type="radio" id="female" name="sex">
+                                                <label for="female">Female</label>
+                                            </fieldset>
+
+                                            <br>
+
+                                            <label for="age">Age</label>
+                                            <input type="number" name="age">
+
+                                            <br>
+
+                                            <label for="birthday">Birthday</label>
+                                            <input type="month" name="birthday">
+                                        </div>
+
+                                        <div class="reg_div_3">
+                                            <button type="submit">Submit</button>
+                                            <button type="reset">Reset</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+
+            <hr></hr>
+
+            <section class="section4" align="center">
+                <form id="login_form" action="/main.py" method="get">
+                    <table align="center" class="dashed_table_2">
+                        <tr>
+                            <td>
+                                <h2 align="center">
+                                    <a name="Login">Login form</a>
+                                </h2>
+
+                                <div class="login_div">
+                                    <input type="text" class="linput" placeholder="Login" name="login">
+                                    <input type="password" class="linput" placeholder="Password" name="password" pattern="[A-Za-z0-9]{8-15}" maxlength="15">
+                                    <button type="submit">Login</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+
+            <hr></hr>
+
+            <section class="section4" align="center">
+                <form id="feedback_form" action="/main.py" method="get">
+                    <table align="center" class="dashed_table_3">
+                        <tr>
+                            <td>
+                                <a name="Feedback">Feedback form</a>
+                                <div class="feedback">
+                                    <div>
+                                      <input type="text" class="finput" placeholder="Name" name="name">
+                                      <input type="email" class="finput" placeholder="Email" name="email">
+                                      <select name="topic" class="finput" placeholder="Topic">
+                                          <option selected disabled>Topic</option>
+                                          <option value="orthographic">Orthographic mistake</option>
+                                          <option value="report">Report</option>
+                                          <option value="contact">Contact to administration</option>
+                                      </select>
+
+                                      <br>
+
+                                      <button type="submit" id="sendFeedback">Send</button>
+                                  </div>
+
+                                  <textarea name="feedback" rows=15 cols=60 placeholder="Text"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </section>
+
+            <section class="section5" align="center">
+                <a href="#">
+                    <img class="up_button" src="https://avatars.githubusercontent.com/u/94192274?v=4">
+                </a>
+            </section>
+        </main>
+
+        <aside></aside>
+
+        <footer>
+            <a href="https://t.me/Mrackushka">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png">
+            </a>
+            <a href="https://t.me/Mrackushka">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/1200px-Telegram_logo.svg.png">
+            </a>
+        </footer>
+        
+    </body>
+
+</html>
